@@ -80,3 +80,13 @@ in this section you define the section of the extension of your app.
 "version": "1.0",
 
 ```
+
+## manifest version
+
+this enable the chrome api to present you with the right amount of control and apis. the higher
+the number the more advance and more control you have in your hands
+
+```
+"manifest_version": 3
+
+```
