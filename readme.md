@@ -51,3 +51,23 @@ this file is a json file, which contians the basic info of the extension, it is 
 }
 
 ```
+
+## name attribute
+
+this is shows the name of the extension in the chorome store and on the tab in the broswer.
+
+```
+"name": "Temp Extensions"
+
+```
+
+## description attribute
+
+you write the simple descprtion of the extension and its job and function in short and precise manner.
+
+```
+
+"description": "Template Chrome Extension"
+
+
+```
