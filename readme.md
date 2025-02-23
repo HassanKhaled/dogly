@@ -71,3 +71,12 @@ you write the simple descprtion of the extension and its job and function in sho
 
 
 ```
+
+## version attribute
+
+in this section you define the section of the extension of your app.
+
+```
+"version": "1.0",
+
+```
