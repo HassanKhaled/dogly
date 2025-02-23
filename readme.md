@@ -90,3 +90,24 @@ the number the more advance and more control you have in your hands
 "manifest_version": 3
 
 ```
+
+## icons attributes
+
+in this section you define teh baisc four icons that you need to add to your extension, you have the
+following sizes:
+
+- 16
+- 32
+- 48
+- 128
+
+```
+
+ "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+
+```
