@@ -13,3 +13,7 @@ we have also the scripts folder which contains all the Js files that used in the
 in root of the application we have a set of basic files like the manifest.json, this file
 is the most important file in the extension, as it contains basic info and description
 and icons and persmission that the extension uses.
+
+# manifest file
+
+this file is a json file, which contians the basic info of the extension, it is formated as json file.
