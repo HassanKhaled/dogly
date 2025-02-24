@@ -119,3 +119,31 @@ following sizes:
 ![48 pixels image](/images/icon48.png)
 
 ![128 pixels image](/images/icon128.png)
+
+## content scripts atrributes
+
+```
+"content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*"]
+    }
+  ]
+
+```
+
+### js
+
+it is JS to be executed on the page
+
+```
+"js": ["scripts/content.js"]
+```
+
+### matches
+
+this is the path that the js to be exectued in
+
+```
+  "matches": ["https://*/*"]
+```
