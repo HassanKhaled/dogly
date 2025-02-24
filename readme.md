@@ -1,6 +1,6 @@
 # Chrome Extensions starter kit
 
-## for start coding right now, no need for copy and paste existing code
+** for start coding right now, no need for copy and paste existing code **
 
 Thers are a set of basic folders that can help you start to code your idea right away,
 we have an images folder which contains all images and icons related to you applications.
