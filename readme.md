@@ -111,3 +111,11 @@ following sizes:
   }
 
 ```
+
+![16 pixels image](~/images/icon16.png)
+
+![32 pixels image](~/images/icon32.png)
+
+![48 pixels image](~/images/icon48.png)
+
+![128 pixels image](~/images/icon128.png)
