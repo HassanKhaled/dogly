@@ -147,3 +147,33 @@ this is the path that the js to be exectued in
 ```
   "matches": ["https://*/*"]
 ```
+
+# action
+
+you can specify if your extension will show on popup or just an icon
+
+```
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+
+```
+
+## default_icon
+
+in this case it will be just an icon extension to be started or stopped
+
+```
+ "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+
+```
