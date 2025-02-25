@@ -1,3 +1,3 @@
 
 // for test propose only
-onclose.log('hi');
+console.log('hi');
