@@ -177,3 +177,7 @@ in this case it will be just an icon extension to be started or stopped
     }
 
 ```
+
+# References
+
+[Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
