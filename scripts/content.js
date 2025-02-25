@@ -1,3 +1,3 @@
 
 // for test propose only
-//alert('hi');
+onclose.log('hi');
