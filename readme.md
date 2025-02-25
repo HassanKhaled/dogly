@@ -178,6 +178,14 @@ in this case it will be just an icon extension to be started or stopped
 
 ```
 
+# popup folder
+
+this folder contains all data related to the popup that the user will see in case of clicking the extension icon, this folder contains style, html and js files that will be executed in event of click
+
+- popup.js
+- popup.css
+- popup.html
+
 # References
 
 [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
