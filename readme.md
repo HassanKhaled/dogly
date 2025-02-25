@@ -186,6 +186,10 @@ this folder contains all data related to the popup that the user will see in cas
 - popup.css
 - popup.html
 
+# images folder
+
+contains the images that will be used in the extension mainly icons and splash screen
+
 # References
 
 [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
