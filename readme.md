@@ -54,7 +54,7 @@ this file is a json file, which contians the basic info of the extension, it is 
 
 ## name attribute
 
-this is shows the name of the extension in the chorome store and on the tab in the broswer.
+this is shows the name of the extension in the `chrome` store and on the tab in the broswer.
 
 ```
 "name": "Temp Extensions"
@@ -74,7 +74,7 @@ you write the simple descprtion of the extension and its job and function in sho
 
 ## version attribute
 
-in this section you define the section of the extension of your app.
+in this section you define the section of the `extension` of your app.
 
 ```
 "version": "1.0",
@@ -83,7 +83,7 @@ in this section you define the section of the extension of your app.
 
 ## manifest version
 
-this enable the chrome api to present you with the right amount of control and apis. the higher
+this enable the `chrome api` to present you with the right amount of control and apis. the higher
 the number the more advance and more control you have in your hands
 
 ```
@@ -134,7 +134,7 @@ following sizes:
 
 ### js
 
-it is JS to be executed on the page
+it is `JS` to be executed on the page
 
 ```
 "js": ["scripts/content.js"]
@@ -142,7 +142,7 @@ it is JS to be executed on the page
 
 ### matches
 
-this is the path that the js to be exectued in
+this is the path that the `JS` to be exectued in
 
 ```
   "matches": ["https://*/*"]
@@ -150,7 +150,7 @@ this is the path that the js to be exectued in
 
 # action
 
-you can specify if your extension will show on popup or just an icon
+you can specify if your extension will show on `popup` or just an icon
 
 ```
   "action": {
@@ -166,7 +166,7 @@ you can specify if your extension will show on popup or just an icon
 
 ## default_icon
 
-in this case it will be just an icon extension to be started or stopped
+in this case it will be just an `icon extension` to be started or stopped
 
 ```
  "default_icon": {
@@ -180,7 +180,7 @@ in this case it will be just an icon extension to be started or stopped
 
 # popup folder
 
-this folder contains all data related to the popup that the user will see in case of clicking the extension icon, this folder contains style, html and js files that will be executed in event of click
+this folder contains all data related to the `popup` that the user will see in case of clicking the extension icon, this folder contains style, html and js files that will be executed in event of click
 
 - popup.js
 - popup.css
@@ -188,7 +188,7 @@ this folder contains all data related to the popup that the user will see in cas
 
 # images folder
 
-contains the images that will be used in the extension mainly icons and splash screen
+contains the `images` that will be used in the extension mainly icons and splash screen
 
 # References
 
