@@ -190,6 +190,121 @@ this folder contains all data related to the `popup` that the user will see in c
 
 contains the `images` that will be used in the extension mainly icons and splash screen
 
+# background script
+
+this is the behind the scene workers which monitors the situation and acts if a specifc action have happened
+
+```
+const extensions = 'https://developer.chrome.com/docs/extensions';
+const webstore = 'https://developer.chrome.com/docs/webstore';
+
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.action.setBadgeText({
+        text: "OFF",
+    });
+});
+
+
+chrome.action.onClicked.addListener(async (tab) => {
+    if (tab.url.startsWith(extensions) || tab.url.startsWith(webstore)) {
+        // Retrieve the action badge to check if the extension is 'ON' or 'OFF'
+        const prevState = await chrome.action.getBadgeText({ tabId: tab.id });
+        // Next state will always be the opposite
+        const nextState = prevState === 'ON' ? 'OFF' : 'ON';
+
+        chrome.action.setBadgeTextColor({ color: 'white' });
+
+        if (nextState == 'ON') {
+            chrome.action.setBadgeBackgroundColor({ color: 'green' });
+        } else {
+            chrome.action.setBadgeBackgroundColor({ color: 'red' });
+        }
+
+        // Set the action badge to the next state
+        await chrome.action.setBadgeText({
+            tabId: tab.id,
+            text: nextState,
+        });
+    }
+});
+
+```
+
+## Badge text
+
+this is small label that appears on the top of the 'extension' icon.
+
+## onInstalled
+
+this event is intiliazed when the extension is installed on the computer
+
+## setBadgeText
+
+is reponsible for setting the text that appears on top of the extension
+
+```
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.action.setBadgeText({
+        text: "OFF",
+    });
+});
+
+```
+
+## text attibute
+
+this is the text that you are wishing to present on top of the `extension` when insalled
+
+## what does it do ?
+
+simply put it is intilized when the user install the `chrome extension`, a label will appear on top of the `extension` icon
+
+```
+
+const extensions = 'https://developer.chrome.com/docs/extensions';
+const webstore = 'https://developer.chrome.com/docs/webstore';
+
+chrome.action.onClicked.addListener(async (tab) => {
+    if (tab.url.startsWith(extensions) || tab.url.startsWith(webstore)) {
+        // Retrieve the action badge to check if the extension is 'ON' or 'OFF'
+        const prevState = await chrome.action.getBadgeText({ tabId: tab.id });
+        // Next state will always be the opposite
+        const nextState = prevState === 'ON' ? 'OFF' : 'ON';
+
+        chrome.action.setBadgeTextColor({ color: 'white' });
+
+        if (nextState == 'ON') {
+            chrome.action.setBadgeBackgroundColor({ color: 'green' });
+        } else {
+            chrome.action.setBadgeBackgroundColor({ color: 'red' });
+        }
+
+        // Set the action badge to the next state
+        await chrome.action.setBadgeText({
+            tabId: tab.id,
+            text: nextState,
+        });
+    }
+});
+
+
+```
+
+## extensions & webstore
+
+we define where the `extension` will work, websitewise
+
+## toggling on and off label
+
+this is responsible for changing the label between on and off
+
+```
+
+const nextState = prevState === 'ON' ? 'OFF' : 'ON';
+
+```
+
 # References
 
 [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
+[Daily.dev Chrome Extension Documentation](https://daily.dev/blog/writing-extensions-for-chrome-a-developers-guide)
