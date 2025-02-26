@@ -306,5 +306,5 @@ const nextState = prevState === 'ON' ? 'OFF' : 'ON';
 
 # References
 
-[Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
-[Daily.dev Chrome Extension Documentation](https://daily.dev/blog/writing-extensions-for-chrome-a-developers-guide)
+[^1][Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
+[^2][Daily.dev Chrome Extension Documentation](https://daily.dev/blog/writing-extensions-for-chrome-a-developers-guide)
