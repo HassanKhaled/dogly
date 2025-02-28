@@ -335,6 +335,8 @@ you can add `UI` by using `popup` which is small window showen when clicking on 
 
 ```
 
+'action' section of the 'manifest' connects the popup with the 'extension' icon click event
+
 # References
 
 [^1][Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
