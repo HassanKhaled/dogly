@@ -1,6 +1,6 @@
 # Chrome Extensions starter kit
 
-** for start coding right now, no need for copy and paste existing code **
+**for start coding right now, no need for copy and paste existing code**
 
 Thers are a set of basic folders that can help you start to code your idea right away,
 we have an images folder which contains all images and icons related to you applications.
@@ -303,6 +303,20 @@ this is responsible for changing the label between on and off
 const nextState = prevState === 'ON' ? 'OFF' : 'ON';
 
 ```
+
+# Content script
+
+it is the code which enables `extension` interact with web page, and this interaction can be change specific aspect of the page or even change it entire
+
+```
+
+const image = document.getElementByTagName('img');
+
+```
+
+the previous code snippet interact with the img tags in the page.
+
+you can specify the content in the 'content_scripts' in the 'manifest' file.
 
 # References
 
