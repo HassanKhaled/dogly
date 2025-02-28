@@ -318,6 +318,19 @@ the previous code snippet interact with the img tags in the page.
 
 you can specify the content in the 'content_scripts' in the 'manifest' file.
 
+# adding UI
+
+you can add `UI` by using `popup` which is small window showen when clicking on the `extension` icon which enable the developer to first debug and check if everything is working correctly.
+
+```
+<html>
+  <body>
+    <h1>Chrome Start Kit</h1>
+  </body>
+</html>
+
+```
+
 # References
 
 [^1][Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
