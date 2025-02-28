@@ -324,10 +324,14 @@ you can add `UI` by using `popup` which is small window showen when clicking on 
 
 ```
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
-    <h1>Chrome Start Kit</h1>
+    <h1>Chrome Extension Starter Kit</h1>
   </body>
 </html>
+
 
 ```
 
