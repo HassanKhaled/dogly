@@ -341,6 +341,22 @@ you can add `UI` by using `popup` which is small window showen when clicking on 
 
 ## Tabs API
 
+it is simply a tab manager which enalbe you to do the following:
+
+- open new tabs
+- change tab content
+- enable interaction with tabs
+
+it can help you to oepn multiple tabs all at once
+do not forget to set `premission` in the `manifest` file
+
+```
+
+"permissions": ["tabs"]
+
+
+```
+
 ## Storage API
 
 ## Content Setting API
