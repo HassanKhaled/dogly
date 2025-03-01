@@ -359,6 +359,14 @@ do not forget to set `premission` in the `manifest` file
 
 ## Storage API
 
+enables your to interact with the local storage, it gives you teh abliity to store and retrive user preferences of color or setting
+
+```
+
+"permissions": ["storage"]
+
+```
+
 ## Content Setting API
 
 ## WebRequest API
