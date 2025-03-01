@@ -339,6 +339,16 @@ you can add `UI` by using `popup` which is small window showen when clicking on 
 
 # Advance Chrome Apis
 
+## alarms API
+
+## audio API
+
+## background
+
+## bookmarks
+
+## browsingData
+
 ## Tabs API
 
 it is simply a tab manager which enalbe you to do the following:
