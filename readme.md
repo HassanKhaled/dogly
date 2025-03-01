@@ -369,6 +369,16 @@ enables your to interact with the local storage, it gives you teh abliity to sto
 
 ## Content Setting API
 
+allows the developer to set rules of handling specific type of content like images and or even 'JS'
+
+```
+
+"permissions": ["contentSettings"]
+
+```
+
+can be used to create focus extention or reduce distractions
+
 ## WebRequest API
 
 ## Notification API
