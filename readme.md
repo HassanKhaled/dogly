@@ -381,6 +381,17 @@ can be used to create focus extention or reduce distractions
 
 ## WebRequest API
 
+enables to check and monitor web reqeust and gives you the ablitiy to change them.
+
+```
+webRequest
+
+ "permissions": ["webRequest"]
+
+```
+
+gives you the abliity block and ads by analysis of the webs requests
+
 ## Notification API
 
 # References
