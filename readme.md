@@ -394,6 +394,14 @@ gives you the abliity block and ads by analysis of the webs requests
 
 ## Notification API
 
+gives you the ablitiy to use notifiaction popups
+
+```
+"permissions": ["notifications"]
+```
+
+ideal for creating reminders
+
 # References
 
 [^1][Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/get-started)
