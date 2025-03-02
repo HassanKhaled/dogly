@@ -341,6 +341,15 @@ you can add `UI` by using `popup` which is small window showen when clicking on 
 
 ## alarms API
 
+it enable the develoer to schedule a specific code to run on time table or to run in some time in the future
+
+```
+"permissions": [
+    "alarms"
+  ]
+
+```
+
 ## audio API
 
 ## background
