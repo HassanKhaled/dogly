@@ -418,6 +418,10 @@ it enables the developer the ability to interact with clipboard
 
 ```
 
+## contextMenus API
+
+gives you the access Google Chrome context menu, you can choose which type of object the new menu item apply to
+
 ## Tabs API
 
 it is simply a tab manager which enalbe you to do the following:
