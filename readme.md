@@ -352,6 +352,11 @@ it enable the develoer to schedule a specific code to run on time table or to ru
 
 ## audio API
 
+it enable the chromeOs device to connect and to control any connect audio device
+
+> [!NOTE]
+> only works on ChromeOS, does not work on the Chrome browser
+
 ## background
 
 ## bookmarks
