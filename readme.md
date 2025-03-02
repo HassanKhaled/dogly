@@ -359,6 +359,20 @@ it enable the chromeOs device to connect and to control any connect audio device
 
 ## background
 
+gives the developer the ability:
+
+- start chrome as sooner the user logs into the computer
+- and shut down late even after the window is closed
+
+```
+
+"permissions": [
+    "background"
+  ]
+
+
+```
+
 ## bookmarks
 
 ## browsingData
