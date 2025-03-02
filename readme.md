@@ -403,6 +403,21 @@ gives the ability to clear browsing data periodically
 
 ```
 
+## clipboardRead API
+
+it enables the developer the ability to interact with clipboard
+
+> [!WARNING]
+> waring have the abliity of read data and copy and paste.
+
+```
+
+"permissions": [
+    "clipboardRead"
+  ]
+
+```
+
 ## Tabs API
 
 it is simply a tab manager which enalbe you to do the following:
