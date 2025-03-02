@@ -391,7 +391,17 @@ gives the `extension` the ablitiy:
 
 ```
 
-## browsingData
+## browsingData API
+
+gives the ability to clear browsing data periodically
+
+```
+
+"permissions": [
+    "browsingData"
+  ]
+
+```
 
 ## Tabs API
 
