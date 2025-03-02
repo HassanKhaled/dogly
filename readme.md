@@ -373,7 +373,23 @@ gives the developer the ability:
 
 ```
 
-## bookmarks
+## bookmarks API
+
+gives the `extension` the ablitiy:
+
+- read
+- write
+- modify
+  your bookmarks
+
+```
+
+"permissions": [
+    "bookmarks"
+  ]
+
+
+```
 
 ## browsingData
 
