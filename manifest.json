@@ -1,6 +1,7 @@
 {
-  "name": "Temp Extensions",
-  "description": "Template Chrome Extension",
+  "name": "Foxy",
+  "description": "Your friend neighbor, kidding it is just a test extension for random images of fox 
+  everytime you open or fresh",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "manifest_version": 3,
