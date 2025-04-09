@@ -18,7 +18,7 @@ fox.addEventListener('click', function (e) {
      });
     
     
-    newImg.setAttribute("class", "img-fluid rounded mx-auto d-block");
+    newImg.setAttribute("class", "img-fluid rounded mx-auto d-block my-2");
     foxes.appendChild(newImg);
 });
 
