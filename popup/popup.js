@@ -19,7 +19,7 @@ fox.addEventListener('click', function (e) {
     
     
     newImg.setAttribute("class", "img-fluid rounded mx-auto d-block my-2");
-    foxes.appendChild(newImg);
+    foxes.prepend(newImg);
 });
 
 document.addEventListener('DOMContentLoaded', function () {
