@@ -6,3 +6,8 @@
    body {
         margin: 10px;
       }
+
+      img{
+
+        border:1mm ridge rgba(211, 220, 50, 0.6);
+      }
