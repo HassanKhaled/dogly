@@ -5,7 +5,7 @@ async function get(){
 
 res = await fetch(`https://randomfox.ca/floof/`);
 record = await res.json();
-//fox.src = record.image;
+
     let newImg = document.createElement('img');
     
     newImg.src = record.image;
