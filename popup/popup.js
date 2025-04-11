@@ -11,7 +11,7 @@ record = await res.json();
     newImg.src = record.image;
     
     
-    newImg.setAttribute("class", "img-thumbnail rounded my-2");
+    newImg.setAttribute("class", "img-thumbnail rounded mx-auto d-block my-2");
     foxes.prepend(newImg);
     
 
@@ -19,14 +19,7 @@ record = await res.json();
 
 fox.addEventListener('click', function (e) {
 get();
-    // let newImg = document.createElement('img');
-    // get().then(x => {
-    //     newImg.src = x;
-    //  });
-    
-    
-    // newImg.setAttribute("class", "img-thumbnail rounded my-2");
-    // foxes.prepend(newImg);
+
 });
 
 document.addEventListener('DOMContentLoaded', function () {
