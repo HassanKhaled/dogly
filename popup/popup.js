@@ -21,7 +21,3 @@ fox.addEventListener('click', function (e) {
 get();
 
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    get();
-}, false);
