@@ -11,7 +11,7 @@ record = await res.json();
     newImg.src = record.image;
     
     
-    newImg.setAttribute("class", " img-thumbnail rounded mx-auto d-block my-2");
+    newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
     foxes.prepend(newImg);
     
 
