@@ -1,4 +1,4 @@
-let fox = document.getElementById("fox");
+let button = document.getElementById("fox");
 let foxes = document.getElementById("images");
 
 async function get(){
@@ -10,14 +10,13 @@ record = await res.json();
     
     newImg.src = record.image;
     
-    
     newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
     foxes.prepend(newImg);
     
 
 }
 
-fox.addEventListener('click', function (e) {
+button.addEventListener('click', function (e) {
 get();
 
 });
