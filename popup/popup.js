@@ -1,6 +1,11 @@
 let button = document.getElementById("fox");
 let foxes = document.getElementById("images");
 
+let loader = document.getElementById("loader");
+let core = document.getElementById("main");
+core.style.display = "none";
+
+
 async function get(){
 
 res = await fetch(`https://randomfox.ca/floof/`);
