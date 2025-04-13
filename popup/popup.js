@@ -1,3 +1,5 @@
+import { get } from './httpsVerbs.js';
+
 let button = document.getElementById("fox");
 let foxes = document.getElementById("images");
 
@@ -12,23 +14,25 @@ setInterval(()=>{
     loader.style.display="none";
 
 
-}, 2000)
-async function get(){
+}, 2000);
 
-res = await fetch(`https://randomfox.ca/floof/`);
-record = await res.json();
 
-    let newImg = document.createElement('img');
+// async function get(){
+
+// res = await fetch(`https://randomfox.ca/floof/`);
+// record = await res.json();
+
+//     let newImg = document.createElement('img');
     
-    newImg.src = record.image;
+//     newImg.src = record.image;
     
-    newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
-    foxes.prepend(newImg);
+//     newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
+//     foxes.prepend(newImg);
     
 
-}
+// }
 
 button.addEventListener('click', function (e) {
-get();
+get(foxes);
 
 });
