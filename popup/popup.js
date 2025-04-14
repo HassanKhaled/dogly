@@ -1,4 +1,4 @@
-import { get } from './httpsVerbs.js';
+import { get } from './RandomFox.js';
 
 let button = document.getElementById("fox");
 let foxes = document.getElementById("images");
