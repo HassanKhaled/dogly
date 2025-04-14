@@ -1,4 +1,4 @@
-export  async function get(x) {
+export  async function getFox(x) {
 
    let res = await fetch(`https://randomfox.ca/floof/`);
    let  record = await res.json();
