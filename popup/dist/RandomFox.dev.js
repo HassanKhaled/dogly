@@ -7,6 +7,8 @@ exports.getFox = getFox;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var api = "https://randomfox.ca/floof/";
+
 var Fox = function Fox(image, link) {
   _classCallCheck(this, Fox);
 
@@ -21,7 +23,7 @@ function getFox(x) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return regeneratorRuntime.awrap(fetch("https://randomfox.ca/floof/"));
+          return regeneratorRuntime.awrap(fetch(api));
 
         case 2:
           res = _context.sent;
@@ -31,13 +33,12 @@ function getFox(x) {
         case 5:
           record = _context.sent;
           fox = new Fox(record.image, record.link);
-          console.log(fox);
           newImg = document.createElement('img');
           newImg.src = fox.image;
           newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
           x.prepend(newImg);
 
-        case 12:
+        case 11:
         case "end":
           return _context.stop();
       }
