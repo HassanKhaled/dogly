@@ -15,7 +15,7 @@ var Fox = function Fox(image, link) {
 };
 
 function getFox(x) {
-  var res, record, newImg;
+  var res, record, fox, newImg;
   return regeneratorRuntime.async(function getFox$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -30,13 +30,14 @@ function getFox(x) {
 
         case 5:
           record = _context.sent;
-          console.log(record);
+          fox = new Fox(record.image, record.link);
+          console.log(fox);
           newImg = document.createElement('img');
-          newImg.src = record.image;
+          newImg.src = fox.image;
           newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
           x.prepend(newImg);
 
-        case 11:
+        case 12:
         case "end":
           return _context.stop();
       }
