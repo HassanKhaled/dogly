@@ -6,8 +6,7 @@ var button = document.getElementById("fox");
 var foxes = document.getElementById("images");
 var loader = document.getElementById("loader");
 var core = document.getElementById("main");
-core.style.display = "none"; //loader.style.display="none";
-
+core.style.display = "none";
 setInterval(function () {
   core.style.display = "block";
   loader.style.display = "none";
