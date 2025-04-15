@@ -1,6 +1,6 @@
 import { getFox } from './RandomFox.js';
 
-let button = document.getElementById("fox");
+let button = document.getElementById("generate");
 let foxes = document.getElementById("images");
 
 let loader = document.getElementById("loader");

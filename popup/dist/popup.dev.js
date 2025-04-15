@@ -2,7 +2,7 @@
 
 var _RandomFox = require("./RandomFox.js");
 
-var button = document.getElementById("fox");
+var button = document.getElementById("generate");
 var foxes = document.getElementById("images");
 var loader = document.getElementById("loader");
 var core = document.getElementById("main");
