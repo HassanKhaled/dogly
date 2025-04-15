@@ -12,5 +12,5 @@ setInterval(function () {
   loader.style.display = "none";
 }, 2000);
 button.addEventListener('click', function (e) {
-  (0, _RandomThing.getFox)(foxes);
+  (0, _RandomThing.getThing)(foxes);
 });

@@ -1,7 +1,7 @@
 const api = `api-url`;
 
 
-class Fox{
+class Thing{
 
 constructor(image, link){
 
@@ -11,15 +11,15 @@ constructor(image, link){
     }
 }
 
-export  async function getFox(x) {
+export  async function getThing(x) {
 
    let res = await fetch(api);
    let  record = await  res.json();
-   let fox = new Fox(record.image, record.link);
+   let thing = new Thing(record.image, record.link);
 
 
     let newImg = document.createElement('img');
-    newImg.src = fox.image;
+    newImg.src = thing.image;
     newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
 
 

@@ -1,4 +1,4 @@
-import { getFox } from './RandomThing.js';
+import { getThing } from './RandomThing.js';
 
 let button = document.getElementById("generate");
 let foxes = document.getElementById("images");
@@ -18,6 +18,6 @@ setInterval(()=>{
 
 button.addEventListener('click', function (e) {
 
-    getFox(foxes);
+    getThing(foxes);
 
 });

@@ -3,22 +3,22 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getFox = getFox;
+exports.getThing = getThing;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var api = "api-url";
 
-var Fox = function Fox(image, link) {
-  _classCallCheck(this, Fox);
+var Thing = function Thing(image, link) {
+  _classCallCheck(this, Thing);
 
   this.image = image;
   this.link = link;
 };
 
-function getFox(x) {
-  var res, record, fox, newImg;
-  return regeneratorRuntime.async(function getFox$(_context) {
+function getThing(x) {
+  var res, record, thing, newImg;
+  return regeneratorRuntime.async(function getThing$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
@@ -32,9 +32,9 @@ function getFox(x) {
 
         case 5:
           record = _context.sent;
-          fox = new Fox(record.image, record.link);
+          thing = new Thing(record.image, record.link);
           newImg = document.createElement('img');
-          newImg.src = fox.image;
+          newImg.src = thing.image;
           newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
           x.prepend(newImg);
 
