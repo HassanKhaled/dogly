@@ -1,6 +1,6 @@
 "use strict";
 
-var _RandomFox = require("./RandomFox.js");
+var _RandomThing = require("./RandomThing.js");
 
 var button = document.getElementById("generate");
 var foxes = document.getElementById("images");
@@ -12,5 +12,5 @@ setInterval(function () {
   loader.style.display = "none";
 }, 2000);
 button.addEventListener('click', function (e) {
-  (0, _RandomFox.getFox)(foxes);
+  (0, _RandomThing.getFox)(foxes);
 });

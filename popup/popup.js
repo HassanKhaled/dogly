@@ -1,4 +1,4 @@
-import { getFox } from './RandomFox.js';
+import { getFox } from './RandomThing.js';
 
 let button = document.getElementById("generate");
 let foxes = document.getElementById("images");
