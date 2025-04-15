@@ -3,7 +3,7 @@
 var _RandomThing = require("./RandomThing.js");
 
 var button = document.getElementById("generate");
-var foxes = document.getElementById("images");
+var images = document.getElementById("images");
 var loader = document.getElementById("loader");
 var core = document.getElementById("main");
 core.style.display = "none";
@@ -12,5 +12,5 @@ setInterval(function () {
   loader.style.display = "none";
 }, 2000);
 button.addEventListener('click', function (e) {
-  (0, _RandomThing.getThing)(foxes);
+  (0, _RandomThing.getThing)(images);
 });
