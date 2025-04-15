@@ -1,4 +1,4 @@
-const api = `https://randomfox.ca/floof/`;
+const api = `api-url`;
 
 
 class Fox{
