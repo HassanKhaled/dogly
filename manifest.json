@@ -1,7 +1,6 @@
 {
-  "name": "Foxy",
-  "description": "Your friend neighbor, kidding it is just a test extension for random images of fox 
-  everytime you open or fresh",
+  "name": "template chrome api requester",
+  "description": "a template for chrome api reqeust and presentation of results of the template",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "manifest_version": 3,
