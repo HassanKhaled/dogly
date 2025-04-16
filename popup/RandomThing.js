@@ -15,11 +15,11 @@ export  async function getThing(x) {
 
    let res = await fetch(api);
    let  record = await  res.json();
-   let thing = new Thing(record.image, record.link);
-
+    let dog = new Thing(record.message[0], record.status);
+    console.log(dog);
 
     let newImg = document.createElement('img');
-    newImg.src = thing.image;
+    newImg.src = dog.message;
     newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
 
 

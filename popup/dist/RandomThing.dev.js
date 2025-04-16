@@ -17,7 +17,7 @@ var Dog = function Dog(message, status) {
 };
 
 function getThing(x) {
-  var res, record, thing, newImg;
+  var res, record, dog, newImg;
   return regeneratorRuntime.async(function getThing$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -32,13 +32,14 @@ function getThing(x) {
 
         case 5:
           record = _context.sent;
-          thing = new Thing(record.image, record.link);
+          dog = new Thing(record.message[0], record.status);
+          console.log(dog);
           newImg = document.createElement('img');
-          newImg.src = thing.image;
+          newImg.src = dog.message;
           newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
           x.prepend(newImg);
 
-        case 11:
+        case 12:
         case "end":
           return _context.stop();
       }
