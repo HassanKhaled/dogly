@@ -1,4 +1,4 @@
-import { getDog } from './RandomThing.js';
+import { getDog } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
