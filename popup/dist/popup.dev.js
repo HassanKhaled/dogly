@@ -12,5 +12,5 @@ setInterval(function () {
   loader.style.display = "none";
 }, 2000);
 button.addEventListener('click', function (e) {
-  (0, _RandomThing.getThing)(images);
+  (0, _RandomThing.getDog)(images);
 });

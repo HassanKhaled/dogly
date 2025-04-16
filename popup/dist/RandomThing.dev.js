@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getThing = getThing;
+exports.getDog = getDog;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -16,9 +16,9 @@ var Dog = function Dog(message, status) {
   this.status = status;
 };
 
-function getThing(x) {
+function getDog(x) {
   var res, record, dog, newImg;
-  return regeneratorRuntime.async(function getThing$(_context) {
+  return regeneratorRuntime.async(function getDog$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:

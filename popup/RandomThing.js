@@ -11,7 +11,7 @@ constructor(message, status){
     }
 }
 
-export  async function getThing(x) {
+export  async function getDog(x) {
 
    let res = await fetch(api);
    let  record = await  res.json();
@@ -21,7 +21,6 @@ export  async function getThing(x) {
     let newImg = document.createElement('img');
     newImg.src = dog.message;
     newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
-
 
     x.prepend(newImg);
 }
