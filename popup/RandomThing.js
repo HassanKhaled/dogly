@@ -15,7 +15,7 @@ export  async function getDog(x) {
 
    let res = await fetch(api);
    let  record = await  res.json();
-    let dog = new Thing(record.message[0], record.status);
+    let dog = new Dog(record.message[0], record.status);
     console.log(dog);
 
     let newImg = document.createElement('img');

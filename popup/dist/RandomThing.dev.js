@@ -32,7 +32,7 @@ function getDog(x) {
 
         case 5:
           record = _context.sent;
-          dog = new Thing(record.message[0], record.status);
+          dog = new Dog(record.message[0], record.status);
           console.log(dog);
           newImg = document.createElement('img');
           newImg.src = dog.message;
