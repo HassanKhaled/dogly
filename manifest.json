@@ -1,6 +1,6 @@
 {
-  "name": "template chrome api requester",
-  "description": "a template for chrome api reqeust and presentation of results of the template",
+  "name": "Dogly",
+  "description": "a simple chrome extension that returns a random dog images from remote api",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "manifest_version": 3,
