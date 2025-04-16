@@ -1,12 +1,12 @@
-const api = `api-url`;
+const api = `https://dog.ceo/api/breeds/image/random/Fetch`;
 
 
-class Thing{
+class Dog{
 
-constructor(image, link){
+constructor(message, status){
 
-    this.image = image;
-    this.link=link;
+    this.message = message;
+    this.status=status;
 
     }
 }

@@ -7,13 +7,13 @@ exports.getThing = getThing;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var api = "api-url";
+var api = "https://dog.ceo/api/breeds/image/random/Fetch";
 
-var Thing = function Thing(image, link) {
-  _classCallCheck(this, Thing);
+var Dog = function Dog(message, status) {
+  _classCallCheck(this, Dog);
 
-  this.image = image;
-  this.link = link;
+  this.message = message;
+  this.status = status;
 };
 
 function getThing(x) {
