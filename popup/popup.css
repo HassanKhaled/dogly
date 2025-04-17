@@ -7,7 +7,7 @@
         margin: 10px;
       }
 
-      img{
+      .frame{
 
         border:1mm ridge rgba(211, 220, 50, 0.6);
         box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2);

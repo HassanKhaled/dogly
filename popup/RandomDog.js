@@ -20,7 +20,7 @@ export  async function getDog(x) {
 
     let newImg = document.createElement('img');
     newImg.src = dog.message;
-    newImg.setAttribute("class", " img-thumbnail rou mx-auto d-block my-2");
+    newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
 
     x.prepend(newImg);
 }
