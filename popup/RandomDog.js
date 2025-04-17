@@ -1,5 +1,10 @@
 const api = `https://dog.ceo/api/breeds/image/random/Fetch`;
 
+const breed_api = `https://dog.ceo/api/breeds/list/all`;
+
+const subbreed_api = `https://dog.ceo/api/breed/hound/list`;
+
+const list_by_breed_api = `https://dog.ceo/api/breed/${'African'}/images/random`;
 
 class Dog{
 

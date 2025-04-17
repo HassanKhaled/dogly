@@ -8,6 +8,9 @@ exports.getDog = getDog;
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var api = "https://dog.ceo/api/breeds/image/random/Fetch";
+var breed_api = "https://dog.ceo/api/breeds/list/all";
+var subbreed_api = "https://dog.ceo/api/breed/hound/list";
+var list_by_breed_api = "https://dog.ceo/api/breed/".concat('African', "/images/random");
 
 var Dog = function Dog(message, status) {
   _classCallCheck(this, Dog);
