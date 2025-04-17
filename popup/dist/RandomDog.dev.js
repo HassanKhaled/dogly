@@ -19,14 +19,14 @@ var Dog = function Dog(message, status) {
   this.status = status;
 };
 
-function getDog(x) {
-  var res, record, dog, newImg;
-  return regeneratorRuntime.async(function getDog$(_context) {
+function listBreed() {
+  var res, record;
+  return regeneratorRuntime.async(function listBreed$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return regeneratorRuntime.awrap(fetch(api));
+          return regeneratorRuntime.awrap(fetch(breed_api));
 
         case 2:
           res = _context.sent;
@@ -35,6 +35,36 @@ function getDog(x) {
 
         case 5:
           record = _context.sent;
+          console.log(record);
+
+        case 7:
+        case "end":
+          return _context.stop();
+      }
+    }
+  });
+}
+
+function getDog(x) {
+  var res, record, dog, newImg;
+  return regeneratorRuntime.async(function getDog$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.next = 2;
+          return regeneratorRuntime.awrap(listBreed());
+
+        case 2:
+          _context2.next = 4;
+          return regeneratorRuntime.awrap(fetch(api));
+
+        case 4:
+          res = _context2.sent;
+          _context2.next = 7;
+          return regeneratorRuntime.awrap(res.json());
+
+        case 7:
+          record = _context2.sent;
           dog = new Dog(record.message[0], record.status);
           console.log(dog);
           newImg = document.createElement('img');
@@ -42,9 +72,9 @@ function getDog(x) {
           newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
           x.prepend(newImg);
 
-        case 12:
+        case 14:
         case "end":
-          return _context.stop();
+          return _context2.stop();
       }
     }
   });

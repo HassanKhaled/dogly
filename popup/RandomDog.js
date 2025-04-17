@@ -16,8 +16,16 @@ constructor(message, status){
     }
 }
 
-export  async function getDog(x) {
+async function listBreed(){
 
+    let res = await fetch(breed_api);
+    let record = await res.json();
+    console.log(record);
+
+}
+
+export  async function getDog(x) {
+await listBreed();
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);
