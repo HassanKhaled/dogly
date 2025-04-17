@@ -16,6 +16,13 @@ constructor(message, status){
     }
 }
 
+async function listSubbreed(){
+
+    let res = await fetch(subbreed_api);
+    let record = await res.json();
+    console.log(record);
+}
+
 async function listBreed(){
 
     let res = await fetch(breed_api);
@@ -25,7 +32,7 @@ async function listBreed(){
 }
 
 export  async function getDog(x) {
-await listBreed();
+    await listSubbreed();
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);
