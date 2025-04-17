@@ -2,9 +2,9 @@ const api = `https://dog.ceo/api/breeds/image/random/Fetch`;
 
 const breed_api = `https://dog.ceo/api/breeds/list/all`;
 
-const subbreed_api = `https://dog.ceo/api/breed/hound/list`;
+const subbreed_api = `https://dog.ceo/api/breed/${'hound'}/list`;
 
-const list_by_breed_api = `https://dog.ceo/api/breed/${'African'}/images/random`;
+const random_by_breed_api = `https://dog.ceo/api/breed/${'retriever'}/images/random`;
 
 class Dog{
 
@@ -31,8 +31,15 @@ async function listBreed(){
 
 }
 
+async function randomByBreed(){
+
+    let res = await fetch(random_by_breed_api);
+    let record = await res.json();
+    console.log(record);
+}
+
 export  async function getDog(x) {
-    await listSubbreed();
+    await randomByBreed();
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);
