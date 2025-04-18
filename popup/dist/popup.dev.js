@@ -12,5 +12,7 @@ setInterval(function () {
   loader.style.display = "none";
 }, 2000);
 button.addEventListener('click', function (e) {
+  button.disabled = true;
   (0, _RandomDog.getDog)(images);
+  button.disabled = false;
 });

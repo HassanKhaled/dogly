@@ -39,7 +39,7 @@ async function randomByBreed(){
 }
 
 export  async function getDog(x) {
-    await randomByBreed();
+    await listBreed();
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);

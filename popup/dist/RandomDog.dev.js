@@ -104,7 +104,7 @@ function getDog(x) {
       switch (_context4.prev = _context4.next) {
         case 0:
           _context4.next = 2;
-          return regeneratorRuntime.awrap(randomByBreed());
+          return regeneratorRuntime.awrap(listBreed());
 
         case 2:
           _context4.next = 4;
