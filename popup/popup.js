@@ -19,5 +19,5 @@ setInterval(()=>{
 button.addEventListener('click', function (e) {
 button.disabled = true;
     getDog(images);
-    button.disabled = false;
+button.disabled = false;
 });
