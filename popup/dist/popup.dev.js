@@ -16,5 +16,7 @@ button.addEventListener('click', function (e) {
   button.disabled = true;
   (0, _RandomDog.getDog)(images);
   button.disabled = false;
+});
+addEventListener("DOMContentLoaded", function (event) {
   (0, _RandomDog.listBreed)(breed);
 });

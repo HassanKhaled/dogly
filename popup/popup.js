@@ -23,5 +23,11 @@ button.disabled = true;
     getDog(images);
 button.disabled = false;
 
-  listBreed(breed);
+
+});
+
+
+addEventListener("DOMContentLoaded", (event) => { 
+
+    listBreed(breed);
 });
