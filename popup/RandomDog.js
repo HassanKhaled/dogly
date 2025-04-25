@@ -16,6 +16,18 @@ constructor(message, status){
     }
 }
 
+ class Breed {
+
+
+    constructor(breed,subreed){
+
+        this.breed = breed;
+        this.subreed =subreed;
+    }
+
+
+}
+
 async function listSubbreed(){
 
     let res = await fetch(subbreed_api);
@@ -23,11 +35,22 @@ async function listSubbreed(){
     console.log(record);
 }
 
-async function listBreed(){
+export async function listBreed(x){
 
     let res = await fetch(breed_api);
     let record = await res.json();
-    console.log(record);
+ // console.log(record.message);
+
+    for (const [key, value] of Object.entries(record.message)) {
+     //   console.log(`${key}: ${value}`);
+
+        var opt = document.createElement('option');
+        opt.value = key;
+        opt.innerHTML = key;
+        x.appendChild(opt);
+    }
+
+    
 
 }
 
@@ -39,7 +62,7 @@ async function randomByBreed(){
 }
 
 export  async function getDog(x) {
-    await listBreed();
+    
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);

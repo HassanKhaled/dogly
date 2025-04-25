@@ -3,7 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.listBreed = listBreed;
 exports.getDog = getDog;
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -17,6 +26,13 @@ var Dog = function Dog(message, status) {
 
   this.message = message;
   this.status = status;
+};
+
+var Breed = function Breed(breed, subreed) {
+  _classCallCheck(this, Breed);
+
+  this.breed = breed;
+  this.subreed = subreed;
 };
 
 function listSubbreed() {
@@ -45,8 +61,9 @@ function listSubbreed() {
   });
 }
 
-function listBreed() {
-  var res, record;
+function listBreed(x) {
+  var res, record, _i, _Object$entries, _Object$entries$_i, key, value, opt;
+
   return regeneratorRuntime.async(function listBreed$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
@@ -61,7 +78,16 @@ function listBreed() {
 
         case 5:
           record = _context2.sent;
-          console.log(record);
+
+          // console.log(record.message);
+          for (_i = 0, _Object$entries = Object.entries(record.message); _i < _Object$entries.length; _i++) {
+            _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2), key = _Object$entries$_i[0], value = _Object$entries$_i[1];
+            //   console.log(`${key}: ${value}`);
+            opt = document.createElement('option');
+            opt.value = key;
+            opt.innerHTML = key;
+            x.appendChild(opt);
+          }
 
         case 7:
         case "end":
@@ -104,18 +130,14 @@ function getDog(x) {
       switch (_context4.prev = _context4.next) {
         case 0:
           _context4.next = 2;
-          return regeneratorRuntime.awrap(listBreed());
-
-        case 2:
-          _context4.next = 4;
           return regeneratorRuntime.awrap(fetch(api));
 
-        case 4:
+        case 2:
           res = _context4.sent;
-          _context4.next = 7;
+          _context4.next = 5;
           return regeneratorRuntime.awrap(res.json());
 
-        case 7:
+        case 5:
           record = _context4.sent;
           dog = new Dog(record.message[0], record.status);
           console.log(dog);
@@ -124,7 +146,7 @@ function getDog(x) {
           newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
           x.prepend(newImg);
 
-        case 14:
+        case 12:
         case "end":
           return _context4.stop();
       }
