@@ -28,8 +28,15 @@ button.disabled = false;
 });
 
 
+breed.addEventListener("change", ()=>{
+
+listSubbreed(breed.value,subbreed)
+
+});
+
+
 addEventListener("DOMContentLoaded", (event) => { 
 
     listBreed(breed);
-    listSubbreed('hound',subbreed);
+   // listSubbreed('hound',subbreed);
 });
