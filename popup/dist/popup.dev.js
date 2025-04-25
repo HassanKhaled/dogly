@@ -7,6 +7,7 @@ var images = document.getElementById("images");
 var loader = document.getElementById("loader");
 var core = document.getElementById("main");
 var breed = document.getElementById("breed");
+var subbreed = document.getElementById("subbreed");
 core.style.display = "none";
 setInterval(function () {
   core.style.display = "block";
@@ -19,4 +20,5 @@ button.addEventListener('click', function (e) {
 });
 addEventListener("DOMContentLoaded", function (event) {
   (0, _RandomDog.listBreed)(breed);
+  (0, _RandomDog.listSubbreed)('hound', subbreed);
 });

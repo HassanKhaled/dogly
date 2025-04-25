@@ -1,4 +1,4 @@
-import { getDog, listBreed } from './RandomDog.js';
+import { getDog, listBreed, listSubbreed } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -6,6 +6,7 @@ let images = document.getElementById("images");
 let loader = document.getElementById("loader");
 let core = document.getElementById("main");
 let breed = document.getElementById("breed");
+let subbreed = document.getElementById("subbreed");
 
 core.style.display = "none";
 
@@ -30,4 +31,5 @@ button.disabled = false;
 addEventListener("DOMContentLoaded", (event) => { 
 
     listBreed(breed);
+    listSubbreed('hound',subbreed);
 });

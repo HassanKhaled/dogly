@@ -28,10 +28,22 @@ constructor(message, status){
 
 }
 
-async function listSubbreed(){
+export async function listSubbreed(breed = 'hound',subbreed){
 
-    let res = await fetch(subbreed_api);
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/list`);
     let record = await res.json();
+
+
+    for (let x = 0; x < record.message.length; x++) {
+
+        let temp = record.message[x];
+
+        var opt = document.createElement('option');
+        opt.value = temp;
+        opt.innerHTML = temp;
+        subbreed.appendChild(opt);
+    }
+    console.log(record.message);
     console.log(record);
 }
 
@@ -39,10 +51,10 @@ export async function listBreed(x){
 
     let res = await fetch(breed_api);
     let record = await res.json();
- // console.log(record.message);
 
     for (const [key, value] of Object.entries(record.message)) {
-     //   console.log(`${key}: ${value}`);
+    let breed = new Breed(key,value);
+  //  console.log(breed);
 
         var opt = document.createElement('option');
         opt.value = key;
@@ -50,15 +62,13 @@ export async function listBreed(x){
         x.appendChild(opt);
     }
 
-    
-
 }
 
 async function randomByBreed(){
 
     let res = await fetch(random_by_breed_api);
     let record = await res.json();
-    console.log(record);
+  
 }
 
 export  async function getDog(x) {
@@ -66,7 +76,7 @@ export  async function getDog(x) {
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);
-    console.log(dog);
+   // console.log(dog);
 
     let newImg = document.createElement('img');
     newImg.src = dog.message;
