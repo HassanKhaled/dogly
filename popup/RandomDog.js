@@ -28,6 +28,14 @@ constructor(message, status){
 
 }
 
+export function clearOptions(selectElement) {
+
+     var i, L = selectElement.options.length - 1;
+     for (i = L; i >= 0; i--) {
+         selectElement.remove(i);
+     }
+}
+
 export async function listSubbreed(breed = 'hound',subbreed){
 
     let res = await fetch(`https://dog.ceo/api/breed/${breed}/list`);
