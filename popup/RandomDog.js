@@ -85,7 +85,7 @@ export  async function getDog(x) {
    let dog = new Dog(record.message[0], record.status);
   
     let newFig = document.createElement("figure");
-    newFig.setAttribute("class","figure");
+    newFig.setAttribute("class","figure mx-auto d-block my-2");
 
     let newFigCap = document.createElement("figcaption")
     newFigCap.setAttribute("class","figure-caption");
@@ -96,7 +96,7 @@ export  async function getDog(x) {
     newFig.append(newImg);
     newFig.append(newFigCap);
     //newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
-    newImg.setAttribute("class","figure-img img-fluid rounded");
+    newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2");
 
     x.prepend(newFig);
 }
