@@ -38,7 +38,7 @@ export function clearOptions(selectElement) {
 
 export async function listSubbreed(breed = 'hound',subbreed){
 
-    let res = await fetch(`https://dog.ceo/api/breed/${breed}/list`);
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/${subreed}/images`);
     let record = await res.json();
 
 
