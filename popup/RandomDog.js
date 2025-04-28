@@ -88,9 +88,18 @@ export  async function getDog(x) {
     let newFig = document.createElement("figure");
     newFig.setAttribute("class","figure mx-auto d-block my-2");
 
+    let text = dog.message;
+    const myArray = text.split("/");
+    console.log(myArray[4]);
+
     let newFigCap = document.createElement("figcaption")
     newFigCap.setAttribute("class","figure-caption text-center");
-    newFigCap.innerHTML=dog.message;
+    newFigCap.innerHTML = myArray[4];
+
+   
+
+  
+
 
     let newImg = document.createElement('img');
     newImg.src = dog.message;
