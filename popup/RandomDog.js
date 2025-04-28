@@ -51,8 +51,7 @@ export async function listSubbreed(breed = 'hound',subbreed){
         opt.innerHTML = temp;
         subbreed.appendChild(opt);
     }
-    console.log(record.message);
-    console.log(record);
+    
 }
 
 export async function listBreed(x){
@@ -62,7 +61,7 @@ export async function listBreed(x){
 
     for (const [key, value] of Object.entries(record.message)) {
     let breed = new Breed(key,value);
-  //  console.log(breed);
+  
 
         var opt = document.createElement('option');
         opt.value = key;
@@ -84,7 +83,7 @@ export  async function getDog(x) {
    let res = await fetch(api);
    let  record = await  res.json();
     let dog = new Dog(record.message[0], record.status);
-   // console.log(dog);
+  
 
     let newImg = document.createElement('img');
     newImg.src = dog.message;
