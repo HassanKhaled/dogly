@@ -83,6 +83,7 @@ export  async function getDog(x) {
    let res = await fetch(api);
    let  record = await  res.json();
    let dog = new Dog(record.message[0], record.status);
+    let newHr = document.createElement("hr");
   
     let newFig = document.createElement("figure");
     newFig.setAttribute("class","figure mx-auto d-block my-2");
@@ -95,6 +96,7 @@ export  async function getDog(x) {
     newImg.src = dog.message;
     newFig.append(newImg);
     newFig.append(newFigCap);
+    newFig.append(newHr);
     //newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
     newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2");
 
