@@ -36,8 +36,8 @@ button.disabled = false;
 // });
 
 
-addEventListener("DOMContentLoaded", (event) => { 
+// addEventListener("DOMContentLoaded", (event) => { 
 
-    listBreed(breed);
-   // listSubbreed('hound',subbreed);
-});
+//     listBreed(breed);
+//    // listSubbreed('hound',subbreed);
+// });
