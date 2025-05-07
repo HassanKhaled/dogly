@@ -98,7 +98,7 @@ export  async function getDog(x) {
     newFig.append(newFigCap);
     newFig.append(newHr);
     //newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
-    newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2");
+    newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2 shadow");
 
     x.prepend(newFig);
 }
