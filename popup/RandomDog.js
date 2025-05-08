@@ -89,7 +89,7 @@ export  async function getDog(x) {
     newFig.setAttribute("class","figure mx-auto d-block my-2");
     
     let newFigCap = document.createElement("figcaption")
-    newFigCap.setAttribute("class","figure-caption text-center");
+    newFigCap.setAttribute("class","figure-caption text-center rou");
     newFigCap.innerHTML = dog.message.split("/")[4];
 
     let newImg = document.createElement('img');
