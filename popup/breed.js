@@ -19,13 +19,13 @@ setInterval(()=>{
 }, 2000);
 
 
-button.addEventListener('click', function (e) {
-button.disabled = true;
-    getDog(images);
-button.disabled = false;
+// button.addEventListener('click', function (e) {
+// button.disabled = true;
+//     getDog(images);
+// button.disabled = false;
 
 
-});
+// });
 
 
 // breed.addEventListener("change", ()=>{
