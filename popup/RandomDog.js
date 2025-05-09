@@ -71,11 +71,11 @@ export async function listBreed(x){
 
 }
 
-async function randomByBreed(){
+export async function randomByBreed(breed){
 
-    let res = await fetch(random_by_breed_api);
+    let res = await fetch( `https://dog.ceo/api/breed/${breed}/images/random`);
     let record = await res.json();
-  
+  alert();
 }
 
 export  async function getDog(x) {
