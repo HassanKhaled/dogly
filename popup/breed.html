@@ -71,5 +71,22 @@
   <script type="module" src="RandomDog.js"></script>
 
   <script type="module" src="popup.js"></script>
+<script type="js">
 
+breed.addEventListener("change", ()=>{
+
+     clearOptions(subbreed);
+     listSubbreed(breed.value,subbreed)
+
+ });
+
+
+ addEventListener("DOMContentLoaded", (event) => { 
+
+     listBreed(breed);
+    // listSubbreed('hound',subbreed);
+});
+
+
+</script>
 </html>
