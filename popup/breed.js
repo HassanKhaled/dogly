@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed , clearOptions,randomByBreed } from './RandomDog.js';
+import { getDog, listBreed, listSubbreed, clearOptions, randomByBreed } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -21,7 +21,7 @@ setInterval(()=>{
 
 button.addEventListener('click', function (e) {
 button.disabled = true;
-randomByBreed(breed.value)
+randomByBreed(breed.value,images)
    // getDog(images);
 button.disabled = false;
 

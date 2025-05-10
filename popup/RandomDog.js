@@ -78,14 +78,38 @@ export async function listBreed(x){
 
 }
 
-export async function randomByBreed(breed){
+export async function randomByBreed(breed,images){
 
     let res = await fetch( `https://dog.ceo/api/breed/${breed}/images/random`);
     let record = await res.json();
-   
     let dog = new Dog(record.message, record.status);
 
-   
+   console.log(dog);
+    getRandomDogByBreed(dog, images);
+}
+
+export function getRandomDogByBreed(dog, images){
+
+    let newHr = document.createElement("hr");
+
+    let newFig = document.createElement("figure");
+    newFig.setAttribute("class", "figure mx-auto d-block my-2");
+
+    let newFigCap = document.createElement("figcaption")
+    newFigCap.setAttribute("class", "figure-caption text-center rou");
+    newFigCap.innerHTML = dog.message.split("/")[4];
+
+    let newImg = document.createElement('img');
+    newImg.src = dog.message;
+    newFig.append(newImg);
+    newFig.append(newFigCap);
+    newFig.append(newHr);
+    //newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
+    newImg.setAttribute("class", "figure-img img-fluid rounded mx-auto d-block my-2 shadow");
+
+    images.prepend(newFig);
+
+
 }
 
 export  async function getDog(x) {
