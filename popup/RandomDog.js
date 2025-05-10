@@ -75,7 +75,9 @@ export async function randomByBreed(breed){
 
     let res = await fetch( `https://dog.ceo/api/breed/${breed}/images/random`);
     let record = await res.json();
-  alert();
+    console.log(record);
+    let dog = new Dog(record.message, record.status);
+    alert(dog.message);
 }
 
 export  async function getDog(x) {
