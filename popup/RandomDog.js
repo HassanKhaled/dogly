@@ -36,21 +36,26 @@ export function clearOptions(selectElement) {
      }
 }
 
-export async function listSubbreed(breed = 'hound',subbreed){
+export async function listSubbreed(breed,subbreed){
 
     let res = await fetch(`https://dog.ceo/api/breed/${breed}/${subbreed}/images`);
     let record = await res.json();
 
+    if(record.code =="404"){
+
+        alert(record.message);
+    }else{
+    console.log(record);
 
     for (let x = 0; x < record.message.length; x++) {
 
         let temp = record.message[x];
-
         var opt = document.createElement('option');
         opt.value = temp;
         opt.innerHTML = temp;
         subbreed.appendChild(opt);
     }
+}
     
 }
 
@@ -75,9 +80,10 @@ export async function randomByBreed(breed){
 
     let res = await fetch( `https://dog.ceo/api/breed/${breed}/images/random`);
     let record = await res.json();
-    console.log(record);
+   
     let dog = new Dog(record.message, record.status);
-    alert(dog.message);
+
+   
 }
 
 export  async function getDog(x) {
