@@ -51,6 +51,11 @@
   <option selected>Select sub-Breed</option>
   
 </select>
+
+<div class="d-grid gap-2 col-12 mx-auto">
+  <button class=" rou btn btn-light" id="generate"  >Generate<img src="/images/16.png" /></button>
+</div>
+
   <hr>
 </div>
 
@@ -70,23 +75,6 @@
   </body>
   <script type="module" src="RandomDog.js"></script>
 
-  <script type="module" src="popup.js"></script>
-<script type="js">
+  <script type="module" src="breed.js"></script>
 
-breed.addEventListener("change", ()=>{
-
-     clearOptions(subbreed);
-     listSubbreed(breed.value,subbreed)
-
- });
-
-
- addEventListener("DOMContentLoaded", (event) => { 
-
-     listBreed(breed);
-    // listSubbreed('hound',subbreed);
-});
-
-
-</script>
 </html>

@@ -71,11 +71,11 @@ export async function listBreed(x){
 
 }
 
-async function randomByBreed(){
+export async function randomByBreed(breed){
 
-    let res = await fetch(random_by_breed_api);
+    let res = await fetch( `https://dog.ceo/api/breed/${breed}/images/random`);
     let record = await res.json();
-  
+  alert();
 }
 
 export  async function getDog(x) {
@@ -89,7 +89,7 @@ export  async function getDog(x) {
     newFig.setAttribute("class","figure mx-auto d-block my-2");
     
     let newFigCap = document.createElement("figcaption")
-    newFigCap.setAttribute("class","figure-caption text-center");
+    newFigCap.setAttribute("class","figure-caption text-center rou");
     newFigCap.innerHTML = dog.message.split("/")[4];
 
     let newImg = document.createElement('img');
@@ -98,7 +98,7 @@ export  async function getDog(x) {
     newFig.append(newFigCap);
     newFig.append(newHr);
     //newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
-    newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2");
+    newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2 shadow");
 
     x.prepend(newFig);
 }
