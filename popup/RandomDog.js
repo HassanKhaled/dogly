@@ -37,14 +37,16 @@ export function clearOptions(selectElement) {
 }
 
 export async function listSubbreed(breed,subbreed){
-
-    let res = await fetch(`https://dog.ceo/api/breed/${breed}/${subbreed}/images`);
+    console.log(breed);
+  
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/list`);
     let record = await res.json();
 
     if(record.code =="404"){
 
-        alert(record.message);
+       subbreed.disabled = true;
     }else{
+        subbreed.disabled = false;
     console.log(record);
 
     for (let x = 0; x < record.message.length; x++) {
