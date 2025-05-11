@@ -22,23 +22,15 @@ setInterval(()=>{
 button.addEventListener('click', function (e) {
 button.disabled = true;
 randomByBreed(breed.value,images)
-   // getDog(images);
+ 
 button.disabled = false;
 
 
 });
 
 
-// breed.addEventListener("change", ()=>{
-
-//     clearOptions(subbreed);
-//     listSubbreed(breed.value,subbreed)
-
-// });
-
-
 addEventListener("DOMContentLoaded", (event) => { 
-
+    
     listBreed(breed);
-   //listSubbreed('hound',subbreed);
+  
 });
