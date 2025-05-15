@@ -11,6 +11,7 @@ let subbreed = document.getElementById("subbreed");
 core.style.display = "none";
 
 
+
 setInterval(()=>{
 
     core.style.display = "block";
@@ -20,11 +21,20 @@ setInterval(()=>{
 
 
 button.addEventListener('click', function (e) {
+
+
+    if(breed.value!="Select Breed"){
 button.disabled = true;
+
+console.log(breed.value);
 randomByBreed(breed.value,images)
  
 button.disabled = false;
 
+    }else{
+
+        alert("Error Error Error");
+    }
 
 });
 
