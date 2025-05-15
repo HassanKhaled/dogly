@@ -84,7 +84,7 @@ export async function randomByBreed(breed,images){
     let record = await res.json();
     let dog = new Dog(record.message, record.status);
 
-   console.log(dog);
+   
     getRandomDogByBreed(dog, images);
 }
 
@@ -95,14 +95,14 @@ export function getRandomDogByBreed(dog, images){
     let newFig = document.createElement("figure");
     newFig.setAttribute("class", "figure mx-auto d-block my-2");
 
-    let newFigCap = document.createElement("figcaption")
-    newFigCap.setAttribute("class", "figure-caption text-center rou");
-    newFigCap.innerHTML = dog.message.split("/")[4];
+    // let newFigCap = document.createElement("figcaption")
+    // newFigCap.setAttribute("class", "figure-caption text-center rou");
+    // newFigCap.innerHTML = dog.message.split("/")[4];
 
     let newImg = document.createElement('img');
     newImg.src = dog.message;
     newFig.append(newImg);
-    newFig.append(newFigCap);
+  //  newFig.append(newFigCap);
     newFig.append(newHr);
     //newImg.setAttribute("class", "frame img-thumbnail rou mx-auto d-block my-2");
     newImg.setAttribute("class", "figure-img img-fluid rounded mx-auto d-block my-2 shadow");
