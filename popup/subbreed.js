@@ -28,16 +28,16 @@ button.disabled = false;
 });
 
 
-// breed.addEventListener("change", ()=>{
+breed.addEventListener("change", ()=>{
 
-//     clearOptions(subbreed);
-//     listSubbreed(breed.value,subbreed)
+    clearOptions(subbreed);
+    listSubbreed(breed.value,subbreed)
 
-// });
+});
 
 
-// addEventListener("DOMContentLoaded", (event) => { 
+addEventListener("DOMContentLoaded", (event) => { 
 
-//     listBreed(breed);
-//    // listSubbreed('hound',subbreed);
-// });
+    listBreed(breed);
+   // listSubbreed('hound',subbreed);
+});
