@@ -6,6 +6,8 @@ const subbreed_api = `https://dog.ceo/api/breed/${'hound'}/list`;
 
 const random_by_breed_api = `https://dog.ceo/api/breed/${'retriever'}/images/random`;
 
+const random_by_sub_breed_api = `https://dog.ceo/api/breed/hound/afghan/images/random`;
+
 class Dog{
 
 constructor(message, status){
@@ -78,6 +80,17 @@ export async function listBreed(x){
 
 }
 
+
+export async function randomBySubBreed(breed,subbreed,images){
+
+    let res = await fetch( `https://dog.ceo/api/breed/${breed}/${subbreed}/images/random`);
+    let record = await res.json();
+    let dog = new Dog(record.message, record.status);
+
+   
+    getRandomDogBySubBreed(dog, images);
+}
+
 export async function randomByBreed(breed,images){
 
     let res = await fetch( `https://dog.ceo/api/breed/${breed}/images/random`);
@@ -87,6 +100,27 @@ export async function randomByBreed(breed,images){
    
     getRandomDogByBreed(dog, images);
 }
+
+export function getRandomDogBySubBreed(dog, images){
+
+    let newHr = document.createElement("hr");
+
+    let newFig = document.createElement("figure");
+    newFig.setAttribute("class", "figure mx-auto d-block my-2");
+
+    let newImg = document.createElement('img');
+    newImg.src = dog.message;
+    newFig.append(newImg);
+    newFig.append(newHr);
+    newImg.setAttribute("class", "figure-img img-fluid rounded mx-auto d-block my-2 shadow");
+
+    images.prepend(newFig);
+
+
+}
+
+
+
 
 export function getRandomDogByBreed(dog, images){
 
