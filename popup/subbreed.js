@@ -18,12 +18,20 @@ setInterval(()=>{
 
 }, 2000);
 
+console.log(breed.value);
+console.log(subbreed.value);
 
 button.addEventListener('click', function (e) {
+
+    if(breed.value!="Select Breed" && subbreed.value!="Select sub-Breed"){
 button.disabled = true;
 randomBySubBreed(breed.value,subbreed.value,images);
 button.disabled = false;
+    }else{
 
+
+        alert("you have select breed & subbreed");
+    }
 
 });
 
