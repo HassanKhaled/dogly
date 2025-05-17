@@ -32,6 +32,14 @@ constructor(message, status){
 
 }
 
+export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afghan", num){
+
+    
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/${subbreed}/images/random/${num}`);
+    let record = await res.json();
+console.log(record);
+}
+
 export async function getAllImageOfBree(breed="afghan"){
     let res = await fetch(`https://dog.ceo/api/breed/hound/${breed}/images`);
     let record = await res.json();
