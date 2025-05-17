@@ -37,20 +37,20 @@ export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afgha
     
     let res = await fetch(`https://dog.ceo/api/breed/${breed}/${subbreed}/images/random/${num}`);
     let record = await res.json();
-console.log(record);
+
 }
 
 export async function getAllImageOfBree(breed="afghan"){
     let res = await fetch(`https://dog.ceo/api/breed/hound/${breed}/images`);
     let record = await res.json();
-console.log(record);
+
     
 }
 
 export async function randomDogsByNumber(num){
     let res = await fetch(`https://dog.ceo/api/breeds/image/random/${num}`);
     let record = await res.json();
-console.log(record);
+
 
 }
 
@@ -58,7 +58,7 @@ console.log(record);
 
     let res = await fetch(list_all_api_breed_subbreed);
     let record = await res.json();
-console.log(record);
+
 }
 
 export function clearOptions(selectElement) {
