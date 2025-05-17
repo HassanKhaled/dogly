@@ -56,8 +56,9 @@ export async function randomDogsByNumber(num){
 
  export async function testApis(){
 
-    let res = await fetch(list_all_api_breed_subbreed);
+    let res = await fetch("https://random-d.uk/api/v2/random");
     let record = await res.json();
+    console.log(record);
 
 }
 

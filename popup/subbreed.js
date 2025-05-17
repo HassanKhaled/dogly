@@ -20,8 +20,7 @@ setInterval(()=>{
 
 
 button.addEventListener('click', function (e) {
-    getDogsByNumberBreedSubbreed("hound","afghan",5);
-
+ 
     if(breed.value=="Select Breed" || subbreed.value=="Select sub-Breed" || subbreed.options.length == 0  ){
     
         alert("you have select breed & subbreed");
