@@ -32,11 +32,18 @@ constructor(message, status){
 
 }
 
- async function testApis(){
+export async function randomDogsByNumber(num){
+    let res = await fetch(`https://dog.ceo/api/breeds/image/random/${num}`);
+    let record = await res.json();
+console.log(record);
+
+}
+
+ export async function testApis(){
 
     let res = await fetch(list_all_api_breed_subbreed);
     let record = await res.json();
-
+console.log(record);
 }
 
 export function clearOptions(selectElement) {

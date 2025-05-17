@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed , clearOptions, randomBySubBreed } from './RandomDog.js';
+import { getDog, listBreed, listSubbreed , clearOptions, randomBySubBreed , testApis } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -20,7 +20,7 @@ setInterval(()=>{
 
 
 button.addEventListener('click', function (e) {
-
+    testApis();
 
     if(breed.value=="Select Breed" || subbreed.value=="Select sub-Breed" || subbreed.options.length == 0  ){
     
