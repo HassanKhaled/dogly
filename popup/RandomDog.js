@@ -8,6 +8,8 @@ const random_by_breed_api = `https://dog.ceo/api/breed/${'retriever'}/images/ran
 
 const random_by_sub_breed_api = `https://dog.ceo/api/breed/hound/afghan/images/random`;
 
+const list_all_api_breed_subbreed = "https://dog.ceo/api/breeds/list/all";
+
 class Dog{
 
 constructor(message, status){
@@ -30,6 +32,13 @@ constructor(message, status){
 
 }
 
+ async function testApis(){
+
+    let res = await fetch(list_all_api_breed_subbreed);
+    let record = await res.json();
+
+}
+
 export function clearOptions(selectElement) {
 
      var i, L = selectElement.options.length - 1;
@@ -39,7 +48,6 @@ export function clearOptions(selectElement) {
 }
 
 export async function listSubbreed(breed,subbreed){
-    console.log(breed);
   
     let res = await fetch(`https://dog.ceo/api/breed/${breed}/list`);
     let record = await res.json();
@@ -49,7 +57,7 @@ export async function listSubbreed(breed,subbreed){
        subbreed.disabled = true;
     }else{
         subbreed.disabled = false;
-    console.log(record);
+  
 
     for (let x = 0; x < record.message.length; x++) {
 
