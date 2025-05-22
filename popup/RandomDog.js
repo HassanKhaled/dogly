@@ -43,12 +43,12 @@ export async function listAllBreedSubbreeds(x){
 
     for (const [key, value] of Object.entries(results)) {
 
-        console.log(`${key}:${key.length} : ${value}`);
+        console.log(`${key}:${value.length} : ${value}`);
 
         let newFig = document.createElement("li");
         newFig.innerHTML =key;
 
-        if(key.length>0){
+        if(value.length>0){
 
             newFig.setAttribute("class","list-group-item active");
 
