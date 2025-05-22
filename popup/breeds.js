@@ -1,7 +1,6 @@
 import { getDog, listBreed, listSubbreed , clearOptions ,listAllBreedSubbreeds } from './RandomDog.js';
 
-let button = document.getElementById("generate");
-let images = document.getElementById("images");
+
 
 let loader = document.getElementById("loader");
 let core = document.getElementById("main");
@@ -22,7 +21,7 @@ setInterval(()=>{
 
 
 addEventListener("DOMContentLoaded", (event) => { 
-    
+
     listAllBreedSubbreeds(breeds);
 
 });
