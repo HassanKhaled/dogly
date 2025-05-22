@@ -21,25 +21,8 @@ setInterval(()=>{
 }, 2000);
 
 
-// button.addEventListener('click', function (e) {
-// button.disabled = true;
-//     getDog(images);
-// button.disabled = false;
-
-
-// });
-
-
-// breed.addEventListener("change", ()=>{
-
-//     clearOptions(subbreed);
-//     listSubbreed(breed.value,subbreed)
-
-// });
-
-
 addEventListener("DOMContentLoaded", (event) => { 
+    
     listAllBreedSubbreeds(breeds);
-  //  listBreed(breed);
-   // listSubbreed('hound',subbreed);
+
 });
