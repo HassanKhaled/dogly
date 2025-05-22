@@ -40,9 +40,20 @@ export async function listAllBreedSubbreeds(x){
     console.log(record);
     // let dog = new Dog(record.message[0], record.status);
     //  let newHr = document.createElement("hr");
-   
-    //  let newFig = document.createElement("figure");
-    //  newFig.setAttribute("class","figure mx-auto d-block my-2");
+   let results = record.message;
+
+    for (const [key, value] of Object.entries(results)) {
+        console.log(`${key}: ${value}`);
+
+        let newFig = document.createElement("li");
+        newFig.innerHTML =key;
+        newFig.setAttribute("class","list-group-item");
+        x.prepend(newFig);
+      }
+
+    //  let newFig = document.createElement("li");
+    //  newFig.innerHTML = "test";
+    //  newFig.setAttribute("class","list-group-item");
      
     //  let newFigCap = document.createElement("figcaption")
     //  newFigCap.setAttribute("class","figure-caption text-center rou");
@@ -57,7 +68,7 @@ export async function listAllBreedSubbreeds(x){
      
     //  newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2 shadow");
  
-    //  x.prepend(newFig);
+     //x.prepend(newFig);
 
 }
 
