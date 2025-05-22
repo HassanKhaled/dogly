@@ -32,6 +32,35 @@ constructor(message, status){
 
 }
 
+export async function listAllBreedSubbreeds(x){
+
+    let res = await fetch(list_all_api_breed_subbreed);
+    let  record = await  res.json();
+
+    console.log(record);
+    // let dog = new Dog(record.message[0], record.status);
+    //  let newHr = document.createElement("hr");
+   
+    //  let newFig = document.createElement("figure");
+    //  newFig.setAttribute("class","figure mx-auto d-block my-2");
+     
+    //  let newFigCap = document.createElement("figcaption")
+    //  newFigCap.setAttribute("class","figure-caption text-center rou");
+    //  newFigCap.innerHTML = dog.message.split("/")[4];
+ 
+    //  let newImg = document.createElement('img');
+    //  newImg.src = dog.message;
+    //  newFig.append(newImg);
+    //  newFig.append(newFigCap);
+    //  newFig.append(newHr);
+     
+     
+    //  newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2 shadow");
+ 
+    //  x.prepend(newFig);
+
+}
+
 export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afghan", num){
 
     
