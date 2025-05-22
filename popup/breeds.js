@@ -4,8 +4,6 @@ import { getDog, listBreed, listSubbreed , clearOptions ,listAllBreedSubbreeds }
 
 let loader = document.getElementById("loader");
 let core = document.getElementById("main");
-let breed = document.getElementById("breed");
-let subbreed = document.getElementById("subbreed");
 let breeds = document.getElementById("breeds");
 
 
