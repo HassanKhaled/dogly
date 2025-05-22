@@ -51,24 +51,7 @@ export async function listAllBreedSubbreeds(x){
         x.prepend(newFig);
       }
 
-    //  let newFig = document.createElement("li");
-    //  newFig.innerHTML = "test";
-    //  newFig.setAttribute("class","list-group-item");
-     
-    //  let newFigCap = document.createElement("figcaption")
-    //  newFigCap.setAttribute("class","figure-caption text-center rou");
-    //  newFigCap.innerHTML = dog.message.split("/")[4];
- 
-    //  let newImg = document.createElement('img');
-    //  newImg.src = dog.message;
-    //  newFig.append(newImg);
-    //  newFig.append(newFigCap);
-    //  newFig.append(newHr);
-     
-     
-    //  newImg.setAttribute("class","figure-img img-fluid rounded mx-auto d-block my-2 shadow");
- 
-     //x.prepend(newFig);
+
 
 }
 
