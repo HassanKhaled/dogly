@@ -38,8 +38,7 @@ export async function listAllBreedSubbreeds(x){
     let  record = await  res.json();
 
     console.log(record);
-    // let dog = new Dog(record.message[0], record.status);
-    //  let newHr = document.createElement("hr");
+
    let results = record.message;
 
     for (const [key, value] of Object.entries(results)) {
