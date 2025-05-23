@@ -21,5 +21,5 @@ setInterval(()=>{
 addEventListener("DOMContentLoaded", (event) => { 
 
     listAllBreedSubbreeds(breeds);
-    createNavBarDynmically(document.getElementById("navbar"));
+    createNavBarDynmically(document.getElementById("navbar"),"Breeds");
 });

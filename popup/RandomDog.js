@@ -12,8 +12,8 @@ const list_all_api_breed_subbreed = "https://dog.ceo/api/breeds/list/all";
 
 let navBarLinks = [ 
     { "html":"Random" , "href":"popup.html"} , 
-    { "html":"Breed" , "href":"breed.html"} ,
     { "html":"Breeds" , "href":"breeds.html"} ,
+    { "html":"Breed" , "href":"breed.html"} ,
     { "html":"Subbreed" , "href":"subbreed.html"}  ]
 
 
@@ -39,7 +39,7 @@ constructor(message, status){
 
 }
 
-export async function createNavBarDynmically(x){
+export async function createNavBarDynmically(x,active){
 
     navBarLinks.forEach(function(link) {
         
@@ -50,7 +50,14 @@ export async function createNavBarDynmically(x){
       let anchor = document.createElement("a");
       anchor.href=link.href;
       anchor.innerHTML=link.html;
-      anchor.setAttribute("class","nav-link");
+      if(active==link.html){ 
+        anchor.setAttribute("class","nav-link active");
+
+      }else{
+
+        anchor.setAttribute("class","nav-link");
+      }
+     
        // newFig.setAttribute("class","list-group-item active");
        newLi.append(anchor);
         x.prepend(newLi);
