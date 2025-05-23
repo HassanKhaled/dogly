@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed , clearOptions ,listAllBreedSubbreeds } from './RandomDog.js';
+import { createNavBarDynmically ,listAllBreedSubbreeds } from './RandomDog.js';
 
 
 
@@ -21,5 +21,5 @@ setInterval(()=>{
 addEventListener("DOMContentLoaded", (event) => { 
 
     listAllBreedSubbreeds(breeds);
-
+    createNavBarDynmically(document.getElementById("navbar"));
 });
