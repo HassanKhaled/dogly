@@ -49,24 +49,16 @@ export async function listAllBreedSubbreeds(x){
         newFig.innerHTML =key;
 
         if(value.length>0){
- //<span class="badge bg-primary rounded-pill">14</span>
             let newSpan = document.createElement("span");
             newSpan.setAttribute("class","badge bg-success rounded-pill");
             newSpan.innerHTML = value.length;
             newFig.setAttribute("class","list-group-item active");
-newFig.append(newSpan);
+            newFig.append(newSpan);
         }else{
-
             newFig.setAttribute("class","list-group-item");
-
         }
-
-       
         x.prepend(newFig);
       }
-
-
-
 }
 
 export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afghan", num){
