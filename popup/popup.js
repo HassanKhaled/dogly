@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed , clearOptions } from './RandomDog.js';
+import { getDog, listBreed, listSubbreed , clearOptions,createNavBarDynmically } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -36,8 +36,7 @@ button.disabled = false;
 // });
 
 
-// addEventListener("DOMContentLoaded", (event) => { 
+addEventListener("DOMContentLoaded", (event) => { 
 
-//     listBreed(breed);
-//    // listSubbreed('hound',subbreed);
-// });
+    createNavBarDynmically(document.getElementById("navbar"),"Random");
+});
