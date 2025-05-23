@@ -10,6 +10,13 @@ const random_by_sub_breed_api = `https://dog.ceo/api/breed/hound/afghan/images/r
 
 const list_all_api_breed_subbreed = "https://dog.ceo/api/breeds/list/all";
 
+let navBarLinks = [ 
+    { "html":"Random" , "href":"popup.html"} , 
+    { "html":"Breed" , "href":"breed.html"} ,
+    { "html":"Breeds" , "href":"breeds.html"} ,
+    { "html":"Subbreed" , "href":"subbreed.html"}  ]
+
+
 class Dog{
 
 constructor(message, status){
