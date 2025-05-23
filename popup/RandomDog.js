@@ -41,18 +41,23 @@ constructor(message, status){
 
 export async function createNavBarDynmically(x){
 
+    navBarLinks.forEach(function(link) {
+        
+        let newLi = document.createElement("li");
+        newLi.setAttribute("class","nav-item");
+      //  newLi.innerHTML = value.length;
+    
+      let anchor = document.createElement("a");
+      anchor.href=link.href;
+      anchor.innerHTML=link.html;
+      anchor.setAttribute("class","nav-link");
+       // newFig.setAttribute("class","list-group-item active");
+       newLi.append(anchor);
+        x.prepend(newLi);
 
-    let newLi = document.createElement("li");
-    newLi.setAttribute("class","nav-item");
-  //  newLi.innerHTML = value.length;
+    });
 
-  let anchor = document.createElement("a");
-anchor.href="#";
-anchor.innerHTML="Link";
-anchor.setAttribute("class","nav-link");
-   // newFig.setAttribute("class","list-group-item active");
-   newLi.append(anchor);
-    x.prepend(newLi);
+ 
     /*
     
      console.log(`${key}:${value.length} : ${value}`);
