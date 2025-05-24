@@ -95,7 +95,7 @@ export async function listAllBreedSubbreeds(x){
         
                 let newDog = document.createElement("li");
                 newDog.innerHTML =dog;
-                newDog.setAttribute("class","list-group-item");
+                newDog.setAttribute("class","list-group-item success");
 
              
                 newFig.append(newDog);
