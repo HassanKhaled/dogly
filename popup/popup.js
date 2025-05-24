@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed , clearOptions,createNavBarDynmically } from './RandomDog.js';
+import { getDog, createNavBarDynmically } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
