@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed, clearOptions, randomByBreed } from './RandomDog.js';
+import { getDog, listBreed, listSubbreed, clearOptions, randomByBreed , createNavBarDynmically } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -40,7 +40,7 @@ button.disabled = false;
 
 
 addEventListener("DOMContentLoaded", (event) => { 
-    
+    createNavBarDynmically(document.getElementById("navbar"),"Breed");
     listBreed(breed);
   
 });
