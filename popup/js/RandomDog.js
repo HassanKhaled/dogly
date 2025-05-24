@@ -45,7 +45,7 @@ export async function createNavBarDynmically(x,active){
         
         let newLi = document.createElement("li");
         newLi.setAttribute("class","nav-item");
-      //  newLi.innerHTML = value.length;
+     
     
       let anchor = document.createElement("a");
       anchor.href=link.href;
@@ -58,30 +58,11 @@ export async function createNavBarDynmically(x,active){
         anchor.setAttribute("class","nav-link");
       }
      
-       // newFig.setAttribute("class","list-group-item active");
+ 
        newLi.append(anchor);
         x.prepend(newLi);
 
     });
-
- 
-    /*
-    
-     console.log(`${key}:${value.length} : ${value}`);
-
-        let newFig = document.createElement("li");
-        newFig.innerHTML =key;
-
-        if(value.length>0){
-            let newSpan = document.createElement("span");
-            newSpan.setAttribute("class","badge bg-success rounded-pill");
-            newSpan.innerHTML = value.length;
-            newFig.setAttribute("class","list-group-item active");
-            newFig.append(newSpan);
-        }else{
-            newFig.setAttribute("class","list-group-item");
-        }
-        x.prepend(newFig);*/
 
 }
 
