@@ -1,4 +1,4 @@
-import { getDog, listBreed, listSubbreed , clearOptions, randomBySubBreed , testApis, getDogsByNumberBreedSubbreed } from './RandomDog.js';
+import { getDog, listBreed, listSubbreed , clearOptions, randomBySubBreed , testApis, getDogsByNumberBreedSubbreed ,createNavBarDynmically} from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -44,7 +44,7 @@ breed.addEventListener("change", ()=>{
 
 
 addEventListener("DOMContentLoaded", (event) => { 
-
+    createNavBarDynmically(document.getElementById("navbar"),"Subbreed");
     listBreed(breed);
  
 });
