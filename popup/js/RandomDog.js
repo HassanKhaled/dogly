@@ -77,7 +77,7 @@ export async function listAllBreedSubbreeds(x){
 
     for (const [key, value] of Object.entries(results)) {
 
-        console.log(`${key}:${value.length} : ${value}`);
+     //   console.log(`${key}:${value.length} : ${value}`);
 
         let newFig = document.createElement("li");
         newFig.innerHTML =key;
@@ -87,7 +87,22 @@ export async function listAllBreedSubbreeds(x){
             newSpan.setAttribute("class","badge bg-success rounded-pill");
             newSpan.innerHTML = value.length;
             newFig.setAttribute("class","list-group-item active");
+
+       
             newFig.append(newSpan);
+       
+            value.forEach(function(dog) {
+        
+                let newDog = document.createElement("li");
+                newDog.innerHTML =dog;
+                newDog.setAttribute("class","list-group-item");
+
+             
+                newFig.append(newDog);
+         
+            
+            });
+       
         }else{
             newFig.setAttribute("class","list-group-item");
         }
