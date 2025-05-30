@@ -12,6 +12,7 @@ const list_all_api_breed_subbreed = "https://dog.ceo/api/breeds/list/all";
 
 let navBarLinks = [ 
     { "html":"Random" , "href":"popup.html"} , 
+    { "html":"Randoms" , "href":"#"} , 
     { "html":"Breeds" , "href":"breeds.html"} ,
     { "html":"Breed" , "href":"breed.html"} ,
     { "html":"Subbreed" , "href":"subbreed.html"}  ]
