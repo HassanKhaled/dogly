@@ -16,7 +16,8 @@ let navBarLinks = [
     { "html":"Breeds" , "href":"breeds.html"} ,
     { "html":"All Breed" , "href":"#"} , 
     { "html":"Breed" , "href":"breed.html"} ,
-    { "html":"Subbreed" , "href":"subbreed.html"}  ]
+    { "html":"Subbreed" , "href":"subbreed.html"},
+    { "html":"All SubBreed" , "href":"#"}   ]
 
 
 class Dog{
