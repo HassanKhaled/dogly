@@ -80,7 +80,7 @@ export async function listAllBreedSubbreeds(x){
 
     for (const [key, value] of Object.entries(results)) {
 
-     //   console.log(`${key}:${value.length} : ${value}`);
+     
 
         let newFig = document.createElement("li");
         newFig.innerHTML =key;
