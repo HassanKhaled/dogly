@@ -87,7 +87,7 @@ export async function listAllBreedSubbreeds(x){
 
         if(value.length>0){
             let newSpan = document.createElement("span");
-            newSpan.setAttribute("class","badge bg-success rounded-pill");
+            newSpan.setAttribute("class","badge bg-primary rounded-pill");
             newSpan.innerHTML = value.length;
             newFig.setAttribute("class","list-group-item active");
 
