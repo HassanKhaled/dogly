@@ -121,11 +121,12 @@ export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afgha
 
 }
 
-export async function getAllImageOfBreed(breed="afghan"){
-    let res = await fetch(`https://dog.ceo/api/breed/hound/${breed}/images`);
+export async function getAllImageOfBreed(breed){
+    alert(breed);
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
     let record = await res.json();
 
-    
+    console.log(record);
 }
 
 export async function randomDogsByNumber(num){

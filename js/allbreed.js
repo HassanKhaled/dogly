@@ -27,7 +27,8 @@ button.addEventListener('click', function (e) {
 button.disabled = true;
 
 console.log(breed.value);
-randomByBreed(breed.value,images)
+//getAllImageOfBreed(breed.value,images);
+getAllImageOfBreed(breed.value);
  
 button.disabled = false;
 
