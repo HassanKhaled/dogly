@@ -12,11 +12,13 @@ const list_all_api_breed_subbreed = "https://dog.ceo/api/breeds/list/all";
 
 let navBarLinks = [ 
     { "html":"Random" , "href":"popup.html"} , 
-    { "html":"Randoms" , "href":"#"} , 
     { "html":"Breeds" , "href":"breeds.html"} ,
-    { "html":"All Breed" , "href":"#"} , 
     { "html":"Breed" , "href":"breed.html"} ,
     { "html":"Subbreed" , "href":"subbreed.html"},
+    { "html":"Randoms" , "href":"#"} , 
+
+    { "html":"All Breed" , "href":"#"} , 
+  
     { "html":"All SubBreed" , "href":"#"}   ]
 
 
@@ -121,7 +123,7 @@ export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afgha
 
 }
 
-export async function getAllImageOfBree(breed="afghan"){
+export async function getAllImageOfBreed(breed="afghan"){
     let res = await fetch(`https://dog.ceo/api/breed/hound/${breed}/images`);
     let record = await res.json();
 
