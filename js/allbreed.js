@@ -1,4 +1,4 @@
-import {  listBreed,  randomByBreed , createNavBarDynmically } from './RandomDog.js';
+import {  listBreed,  randomByBreed , createNavBarDynmically,getAllImageOfBreed } from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
