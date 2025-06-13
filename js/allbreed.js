@@ -40,7 +40,7 @@ button.disabled = false;
 
 
 addEventListener("DOMContentLoaded", (event) => { 
-    createNavBarDynmically(document.getElementById("navbar"),"Breed");
+    createNavBarDynmically(document.getElementById("navbar"),"All Breed");
     listBreed(breed);
   
 });
