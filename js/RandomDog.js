@@ -15,10 +15,8 @@ let navBarLinks = [
     { "html":"Breeds" , "href":"breeds.html"} ,
     { "html":"Breed" , "href":"breed.html"} ,
     { "html":"Subbreed" , "href":"subbreed.html"},
+    { "html":"All Breed" , "href":"allbreed.html"} , 
     { "html":"Randoms" , "href":"#"} , 
-
-    { "html":"All Breed" , "href":"#"} , 
-  
     { "html":"All SubBreed" , "href":"#"}   ]
 
 
