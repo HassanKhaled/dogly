@@ -38,5 +38,5 @@ button.disabled = false;
 
 addEventListener("DOMContentLoaded", (event) => { 
 
-    createNavBarDynmically(document.getElementById("navbar"),"Random");
+    createNavBarDynmically(document.getElementById("navbar"),"Randoms");
 });
