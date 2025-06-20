@@ -138,6 +138,7 @@ export async function getAllImageOfBreed(breed){
         newImg.src = element;
         newImg.setAttribute("width","128");
         newImg.setAttribute("height","128");
+        newImg.setAttribute("loading","lazy");
       
         newImg.setAttribute("class", "img-thumbnail rounded my-1 shadow");
     
