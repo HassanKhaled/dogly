@@ -106,3 +106,9 @@ a.nav-link.active{
   text-shadow: 2px 2px black;
   
 }
+
+.img-thumbnail{
+
+
+  margin: 5px;
+}
