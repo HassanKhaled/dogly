@@ -98,12 +98,29 @@ background-color: antiquewhite;
   text-align: center;
 }
 
+
+a.nav-link{
+
+  font-weight: bold;
+
+  
+}
+
 a.nav-link.active{
 
-
+  font-weight: bold;
   background-color:  #0d6efd;
   color:white;
   text-shadow: 2px 2px black;
+  
+}
+
+a.nav-link:hover{
+
+  font-weight: bold;
+  background-color:  #baca08;
+  color:#0d6efd;
+  text-shadow: 1px 1px black;
   
 }
 
