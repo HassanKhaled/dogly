@@ -136,8 +136,10 @@ export async function getAllImageOfBreed(breed){
     
         let newImg = document.createElement('img');
         newImg.src = element;
+        newImg.setAttribute("width","128");
+        newImg.setAttribute("height","128");
       
-        newImg.setAttribute("class", " img-fluid rounded d-block my-1 shadow");
+        newImg.setAttribute("class", "img-thumbnail rounded my-1 shadow");
     
         images.prepend(newImg);
 
