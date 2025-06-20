@@ -149,9 +149,14 @@ export async function getAllImageOfBreed(breed){
 }
 
 export async function randomDogsByNumber(num){
-    let res = await fetch(`https://dog.ceo/api/breeds/image/random/${num}`);
-    let record = await res.json();
 
+    let res = await fetch(`https://dog.ceo/api/breeds/image/random/${num}`);
+    
+    let record = await res.json();
+    
+    let dogs = record.message;
+
+    console.log(dogs);
 
 }
 
