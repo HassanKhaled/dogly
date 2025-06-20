@@ -132,12 +132,11 @@ export async function getAllImageOfBreed(breed){
     dogs.forEach((element) => {
 
         let newFig = document.createElement("figure");
-     //   newFig.setAttribute("class", "figure mx-auto d-block my-2");
+   
     
         let newImg = document.createElement('img');
         newImg.src = element;
-       // newFig.append(newImg);
-     
+      
         newImg.setAttribute("class", " img-fluid rounded d-block my-1 shadow");
     
         images.prepend(newImg);
