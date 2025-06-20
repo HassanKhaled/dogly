@@ -122,11 +122,28 @@ export async function getDogsByNumberBreedSubbreed(breed="hound",subbreed="afgha
 }
 
 export async function getAllImageOfBreed(breed){
-    alert(breed);
+   
+
     let res = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
     let record = await res.json();
 
-    console.log(record);
+    let dogs = record.message;
+    
+    dogs.forEach((element) => {
+
+        let newFig = document.createElement("figure");
+        newFig.setAttribute("class", "figure mx-auto d-block my-2");
+    
+        let newImg = document.createElement('img');
+        newImg.src = element;
+        newFig.append(newImg);
+     
+        newImg.setAttribute("class", "figure-img img-fluid rounded mx-auto d-block my-2 shadow");
+    
+        images.prepend(newFig);
+
+    });
+    
 }
 
 export async function randomDogsByNumber(num){
