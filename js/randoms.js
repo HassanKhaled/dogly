@@ -29,12 +29,6 @@ button.disabled = false;
 });
 
 
-// breed.addEventListener("change", ()=>{
-
-//     clearOptions(subbreed);
-//     listSubbreed(breed.value,subbreed)
-
-// });
 
 
 addEventListener("DOMContentLoaded", (event) => { 
