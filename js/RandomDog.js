@@ -155,8 +155,24 @@ export async function randomDogsByNumber(num){
     let record = await res.json();
     
     let dogs = record.message;
+    
+    dogs.forEach((element) => {
 
-    console.log(dogs);
+        let newFig = document.createElement("figure");
+   
+    
+        let newImg = document.createElement('img');
+        newImg.src = element;
+        newImg.setAttribute("width","128");
+        newImg.setAttribute("height","128");
+        newImg.setAttribute("loading","lazy");
+      
+        newImg.setAttribute("class", "img-thumbnail rounded my-1 shadow");
+    
+        images.prepend(newImg);
+
+    });
+    
 
 }
 
