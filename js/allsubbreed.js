@@ -1,4 +1,4 @@
-import {  listBreed, listSubbreed , clearOptions, randomBySubBreed ,createNavBarDynmically} from './RandomDog.js';
+import {  listBreed, listSubbreed , clearOptions, getAllImageOfBreedSubbreed ,createNavBarDynmically} from './RandomDog.js';
 
 let button = document.getElementById("generate");
 let images = document.getElementById("images");
@@ -28,7 +28,7 @@ button.addEventListener('click', function (e) {
     }else{
         
         button.disabled = true;
-        randomBySubBreed(breed.value,subbreed.value,images);
+        getAllImageOfBreedSubbreed(breed.value,subbreed.value);
         button.disabled = false;
     }
 

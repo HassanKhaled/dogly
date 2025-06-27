@@ -149,11 +149,11 @@ export async function getAllImageOfBreed(breed){
 }
 
 
-export async function getAllImageOfBreedSubbreed(breed,subreed){
+export async function getAllImageOfBreedSubbreed(breed,subbreed){
    
-//https://dog.ceo/api/breed/hound/afghan/images
 
-    let res = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
+
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/${subbreed}/images`);
     let record = await res.json();
 
     let dogs = record.message;
