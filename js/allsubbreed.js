@@ -44,7 +44,7 @@ breed.addEventListener("change", ()=>{
 
 
 addEventListener("DOMContentLoaded", (event) => { 
-    createNavBarDynmically(document.getElementById("navbar"),"Subbreed");
+    createNavBarDynmically(document.getElementById("navbar"),"All SubBreed");
     listBreed(breed);
  
 });
