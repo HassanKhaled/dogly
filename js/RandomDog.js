@@ -148,6 +148,35 @@ export async function getAllImageOfBreed(breed){
     
 }
 
+
+export async function getAllImageOfBreedSubbreed(breed,subreed){
+   
+//https://dog.ceo/api/breed/hound/afghan/images
+
+    let res = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
+    let record = await res.json();
+
+    let dogs = record.message;
+    
+    dogs.forEach((element) => {
+
+        let newFig = document.createElement("figure");
+   
+    
+        let newImg = document.createElement('img');
+        newImg.src = element;
+        newImg.setAttribute("width","128");
+        newImg.setAttribute("height","128");
+        newImg.setAttribute("loading","lazy");
+      
+        newImg.setAttribute("class", "img-thumbnail rounded my-1 shadow");
+    
+        images.prepend(newImg);
+
+    });
+    
+}
+
 export async function randomDogsByNumber(num){
 
     let res = await fetch(`https://dog.ceo/api/breeds/image/random/${num}`);
